@@ -2,22 +2,24 @@
 #include <stdlib.h>
 #include <math.h>
 
-int main(){
-	float a,b,c,x1,x2,result,formP,formN,discriminante;
+int main()
+{
+	float a, b, c, result, formP=0, formN=0, delta;
 	printf("Coeficiente a:\n");
-	scanf("%f",&a);
+	scanf("%f", &a);
 	printf("Coeficiente b:\n");
-	scanf("%f",&b);
+	scanf("%f", &b);
 	printf("Coeficiente c:\n");
-	scanf("%f",&c);
-	discriminante = (b*b) - (4*a*c);
-	if(discriminante < 0 )
+	scanf("%f", &c);
+	delta = (b * b) - (4 * a * c);
+	if (delta < 0 && a == 0)
 		printf("Esta equacao nao possui raizes reais");
-	else{
-		formP = (-b + sqrt(discriminante)) / (2*a);
-		formN = (-b - sqrt(discriminante)) / (2*a);
-		printf("X1: %.4f\n",formP);
-		printf("X2: %.4f\n",formN);
+	else
+	{
+		formP = (-b + sqrt(delta)) / (2 * a);
+		formN = (-b - sqrt(delta)) / (2 * a);
+		printf("X1: %.4f\n", formP);
+		printf("X2: %.4f\n", formN);
 	}
 	return 0;
 }
