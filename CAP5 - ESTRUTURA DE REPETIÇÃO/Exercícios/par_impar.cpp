@@ -5,7 +5,7 @@ int main(){
 	int x,i,aux=0,number;
 	printf("Quantos numero voce vai digitar? ");
 	scanf("%d",&x);
-	for(i=0; i<=x; i++){
+	for(i=0; i<x; i++){
 		printf("Digite um numero\n");
 		scanf("%d",&number);
 		if(number==0){
