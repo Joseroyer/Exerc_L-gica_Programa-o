@@ -32,11 +32,5 @@ int main()
         }
         printf("%d\n",maior);
     }
-
-    // for (i = 0; i < TF; i++)
-    // {
-    //     printf("%d \n", vetMenor[i]);
-    // }
-
     return 0;
 }
