@@ -3,7 +3,7 @@
 #define TF 4
 int main()
 {
-    int j, i, Matriz[TF][TF], maior = 0;
+    int j, i, Matriz[TF][TF], soma = 0;
     for (i = 0; i < TF; i++)
     {
         for (j = 0; j < TF; j++)
@@ -14,13 +14,12 @@ int main()
     }
     for (i = 0; i < TF; i++)
     {
-        for (j = 0; j < TF; j++)
+        j++;
+        for (j = 1; j < TF; j++)
         {
-            printf("%d ",Matriz[i][j]);
+            soma += Matriz[i][j];
         }
-        printf("\n");
     }
-
-    
+    printf("SOMA DOS ELEMENTOS ACIMA DA DIAGONAL PRINCIPAL: %d\n", soma);
     return 0;
 }
