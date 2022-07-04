@@ -22,7 +22,7 @@ int main()
                 soma += Matriz[i][j];
         }
     }
-    printf("SOMA DOS POSITIVOS%.1f\n",soma);
+    printf("SOMA DOS POSITIVOS %.1f \n",soma);
     printf("Escolha uma linha:\n");
     scanf("%d", &linha);
     for (j = 0; j < TF; j++)
