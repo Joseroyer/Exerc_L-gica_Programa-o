@@ -12,7 +12,6 @@ int main()
             scanf("%d", &Matriz[i][j]);
         }
     }
-
     for (i = 0; i < TF; i++)
     {
         j=0;
