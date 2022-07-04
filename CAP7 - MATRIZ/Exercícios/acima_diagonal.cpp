@@ -12,10 +12,11 @@ int main()
             scanf("%d", &Matriz[i][j]);
         }
     }
+
     for (i = 0; i < TF; i++)
     {
-        j++;
-        for (j = 1; j < TF; j++)
+        j=0;
+        for (j=i+1; j < TF; j++)
         {
             soma += Matriz[i][j];
         }
