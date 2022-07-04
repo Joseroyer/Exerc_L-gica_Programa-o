@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 #define TF 3
 int main()
 {
@@ -43,4 +44,20 @@ int main()
         printf("%.2f \t", Matriz[i][i]);
     }
     printf("\n");
+    
+	printf("MATRIZ ALTERADA: \n");
+	for(i=0; i<TF; i++){
+		for(j=0; j<TF; j++){
+			if(Matriz[i][j] < 0)
+			{
+				Matriz[i][j] = Matriz[i][j] * Matriz[i][j];
+			}
+		}
+	}
+	for(i=0; i<TF; i++){
+		for(j=0; j<TF; j++){
+			printf("%.1f \t",Matriz[i][j]);
+		}
+		printf("\n");
+	}
 }
